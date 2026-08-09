@@ -1,0 +1,43 @@
+fastapi
+python-multipart
+uvicorn
+sqlalchemy
+aiosqlite
+pydantic
+pydantic-settings
+python-dotenv
+llama-index
+pinecone>=6.0.0
+pymupdf
+crawl4ai
+playwright
+pytesseract
+pillow
+flashrank
+httpx
+
+# Supabase
+supabase==2.9.0
+
+# LLM Providers (cloud APIs)
+anthropic>=0.28.0,<0.29.0
+google-generativeai>=0.5.2,<0.6.0
+
+# LlamaIndex LLM integrations
+llama-index-llms-anthropic==0.3.0
+llama-index-llms-gemini==0.3.1
+
+# Embeddings
+voyageai==0.3.0
+
+# Security
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+slowapi==0.1.9
+
+# Data processing
+pandas
+openpyxl
+aiofiles
+networkx
+matplotlib
