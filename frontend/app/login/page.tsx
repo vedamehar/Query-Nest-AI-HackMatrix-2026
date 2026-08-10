@@ -122,7 +122,7 @@ export default function LoginPage() {
           
           <div className="space-y-4">
             <h1 className="text-7xl font-bold tracking-tighter font-heading text-white drop-shadow-2xl">
-              SiteSense <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-purple to-brand-blue">AI</span>
+              QueryNest <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-purple to-brand-blue">AI</span>
             </h1>
             <p className="text-xl text-slate-400 font-medium tracking-wide max-w-lg mx-auto opacity-80 leading-relaxed">
               Experience the next generation of intelligence. Secure, scalable, and beautifully designed AI support at your fingertips.
@@ -163,7 +163,7 @@ export default function LoginPage() {
           <>
             {/* Mobile Branding */}
             <div className="lg:hidden mb-12 text-center text-white">
-              <h1 className="text-4xl font-bold font-heading">SiteSense AI</h1>
+              <h1 className="text-4xl font-bold font-heading">QueryNest AI</h1>
             </div>
 
             <div className="w-full max-w-sm flex flex-col space-y-12 animate-in fade-in slide-in-from-right-10 duration-700">

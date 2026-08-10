@@ -1,5 +1,5 @@
 /**
- * SiteSense AI — Embeddable Chat Widget
+ * QueryNest AI — Embeddable Chat Widget
  *
  * Usage (2 lines on any website):
  *   <script src="http://localhost:3000/widget.js"
@@ -353,7 +353,7 @@
         <button class="ss-mic-btn" aria-label="Voice input">${ICON_MIC}</button>
         <button class="ss-send-btn" aria-label="Send">${ICON_SEND}</button>
       </div>
-      <div class="ss-footer">Powered by <a href="#">SiteSense</a></div>`;
+      <div class="ss-footer">Powered by <a href="#">QueryNest</a></div>`;
     shadowRoot.appendChild(windowEl);
 
     // --- Refs ---
@@ -671,7 +671,7 @@
       });
 
       if (!res.ok) {
-        console.warn("SiteSense: Widget not authorized for this domain");
+        console.warn("QueryNest: Widget not authorized for this domain");
         return false;
       }
 
@@ -684,20 +684,20 @@
         fallback_message: data.fallback_message || config.fallback_message,
         primary_color: data.primary_color || config.primary_color,
         suggested_questions: data.suggested_questions || [],
-        powered_by: data.powered_by || "SiteSense"
+        powered_by: data.powered_by || "QueryNest"
       };
 
       return true;
     } catch (err) {
-      console.warn("SiteSense: Failed to initialize", err);
+      console.warn("QueryNest: Failed to initialize", err);
       return false;
     }
   }
 
   async function start() {
-    console.log("[SiteSense] Widget starting...");
+    console.log("[QueryNest] Widget starting...");
     if (!BOT_ID) { 
-      console.warn("[SiteSense] Missing data-bot-id on script tag."); 
+      console.warn("[QueryNest] Missing data-bot-id on script tag."); 
       return; 
     }
 
@@ -707,18 +707,18 @@
       return;
     }
 
-    console.log("[SiteSense] Validating bot:", BOT_ID, "at", API_BASE);
+    console.log("[QueryNest] Validating bot:", BOT_ID, "at", API_BASE);
     const authorized = await initWidget();
     
     if (!authorized) {
-      console.error("[SiteSense] Connection failed. Check CORS settings or Bot ID.");
+      console.error("[QueryNest] Connection failed. Check CORS settings or Bot ID.");
       return;
     }
 
-    console.log("[SiteSense] Initialized successfully. Building UI...");
+    console.log("[QueryNest] Initialized successfully. Building UI...");
     build();
     applyColor(config.primary_color);
-    console.log("[SiteSense] Widget ready!");
+    console.log("[QueryNest] Widget ready!");
   }
 
   // Run when DOM is ready

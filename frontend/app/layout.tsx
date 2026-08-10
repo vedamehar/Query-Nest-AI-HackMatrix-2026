@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SiteSense AI",
+  title: "QueryNest AI",
   description: "Local-first multi-tenant RAG chatbot platform",
 };
 

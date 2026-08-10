@@ -72,7 +72,7 @@ export function DashboardSidebar({ isCollapsed, onToggle }: SidebarProps) {
           </div>
           {!isCollapsed && (
             <Link href="/dashboard/bots" className="text-xl font-bold font-heading tracking-tight text-gradient animate-in fade-in duration-300">
-              SiteSense
+              QueryNest
             </Link>
           )}
         </div>
@@ -188,7 +188,7 @@ export function DashboardSidebar({ isCollapsed, onToggle }: SidebarProps) {
         
         {!isCollapsed && (
           <div className="flex items-center justify-between px-2 text-[10px] font-bold tracking-widest text-muted-foreground opacity-30 animate-in fade-in duration-300">
-            <span>SITESENSE AI</span>
+            <span>QUERYNEST AI</span>
             <span>V2.0</span>
           </div>
         )}
