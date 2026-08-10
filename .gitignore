@@ -2,28 +2,43 @@
 __pycache__/
 *.pyc
 *.pyo
-.venv/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
 venv/
+.venv/
+ENV/
+.ENV
 *.egg-info/
 
-# Environment (SECRETS)
+# Environment / secrets
 .env
 .env.local
 .env.production
 .env.development
 
-# Next.js
+# Frontend / Node
 .next/
 node_modules/
 out/
+Design Chatbot UI/node_modules/
 
-# QueryNest Data (Persistent)
+# Data / generated artifacts
 chroma_data/
-*.db
+Data/documents/
+Data/knowledge_base/
+Data/vector_index/
+Data/sessions/
 uploads/
+logs/
 data/
 backend/data/
 backend/uploads/
+*.db
+*.sqlite
+*.sqlite3
 
 # OS
 .DS_Store
@@ -32,10 +47,14 @@ Thumbs.db
 # IDE
 .vscode/
 .idea/
+*.swp
+*.swo
+*~
 
-# Deployment
+# Build / deployment
+dist/
+build/
+*.tmp
+*.log
 .vercel/
 .railway/
-
-# Logs
-*.log
