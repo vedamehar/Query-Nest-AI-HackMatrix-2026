@@ -133,7 +133,21 @@ npm install
 npm run dev
 ```
 
+
+# deployment 
+## local
 Visit [http://localhost:3000](http://localhost:3000).
+
+# frontend -> Vercel
+#backend -> render
+query-nest-ai-hack-matrix-2026-vedants-projects-745d7440.vercel.app
+https://query-nest-ai-hackmatrix-2026.onrender.com
+
+
+## Sources on chatbot hosted
+1 https://indian-culture-azure.vercel.app/
+2 https://e-commerce-xi-ochre-77.vercel.app/
+3 https://crazy-veins-gym.vercel.app/
 
 ## License
 
